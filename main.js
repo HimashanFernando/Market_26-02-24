@@ -42,12 +42,19 @@ ScrollReveal().reveal(".popular__card", {
 ScrollReveal().reveal(".register__image img", {
     ...scrollRevealOption,
     origin: "right",
-})
+});
+
 ScrollReveal().reveal(".register__content h4", {
     ...scrollRevealOption,
    delay: 500,
-})
+});
+
 ScrollReveal().reveal(".register__btn", {
     ...scrollRevealOption,
     delay: 1000,
+});
+
+const swiper = new Swiper(".swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 0,
 })
